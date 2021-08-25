@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Besley&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Besley", serif;
+}
+
+body {
+	padding: 50px;
+	text-align: center;
+	color: #281b2d;
+}
+
+button {
+	padding: 5px 10px;
+	border: 2px solid;
+	background: #fff;
+	cursor: pointer;
+}
+button:hover {
+	color: #fff;
+	background: #281b2d;
+}
