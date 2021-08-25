@@ -13,8 +13,25 @@ body {
 	color: #281b2d;
 }
 
+main {
+	margin: 50px auto;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+h2 {
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 1.2rem;
+	margin-bottom: 10px;
+}
+
 button {
-	padding: 5px 10px;
+	padding: 10px 15px;
 	border: 2px solid;
 	background: #fff;
 	cursor: pointer;
