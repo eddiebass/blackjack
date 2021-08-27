@@ -8,6 +8,7 @@ let message = "";
 let sum = 0;
 let isAlive = false;
 let hasBlackJack = false;
+let hero = true;
 //let firstNum = 0;
 //let secondNum = 0;
 //let thirdNum = 0;
@@ -24,12 +25,15 @@ function generateNum() {
 }
 
 startBtn.addEventListener("click", function () {
-	isAlive = true;
-	let firstNum = generateNum();
-	let secondNum = generateNum();
-	cards = [firstNum, secondNum];
-	sum = firstNum + secondNum;
-	renderGame();
+	if (hero) {
+		hero = false;
+		isAlive = true;
+		let firstNum = generateNum();
+		let secondNum = generateNum();
+		cards = [firstNum, secondNum];
+		sum = firstNum + secondNum;
+		renderGame();
+	}
 });
 
 pickBtn.addEventListener("click", function () {
@@ -50,11 +54,13 @@ function renderGame() {
 	if (sum === 21) {
 		message = "Wohoo! You've got Blackjack!";
 		hasBlackJack = true;
+		hero = true;
 	} else if (sum < 21) {
 		message = "Draw another card";
 	} else {
 		message = "Game Over!, you are out of the game!";
 		isAlive = false;
+		hero = true;
 	}
 	messageEl.textContent = message;
 }
