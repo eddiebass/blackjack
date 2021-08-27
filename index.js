@@ -27,6 +27,7 @@ function generateNum() {
 startBtn.addEventListener("click", function () {
 	if (hero) {
 		hero = false;
+		hasBlackJack = false;
 		isAlive = true;
 		let firstNum = generateNum();
 		let secondNum = generateNum();
@@ -42,6 +43,7 @@ pickBtn.addEventListener("click", function () {
 		sum += thirdNum;
 		cards.push(thirdNum);
 		renderGame();
+		console.log(isAlive, hasBlackJack, hero);
 	}
 });
 

@@ -9,12 +9,12 @@
 
 body {
 	padding: 50px;
-	text-align: center;
 	color: #281b2d;
 }
 
 main {
 	margin: 50px auto;
+	text-align: center;
 }
 
 h1 {
@@ -39,4 +39,12 @@ button {
 button:hover {
 	color: #fff;
 	background: #281b2d;
+}
+
+footer {
+	margin-top: 150px;
+}
+footer p {
+	font-size: 0.75rem;
+	line-height: 1.5;
 }
